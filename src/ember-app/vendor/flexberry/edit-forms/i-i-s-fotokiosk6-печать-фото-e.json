@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Печать фото",
+  "name": "IISFotokiosk6ПечатьФотоE",
+  "className": "ПечатьФотоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-печать-фото",
+      "modelProjection": "ПечатьФотоE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk6-клиент-e",
+  "editForm": "i-i-s-fotokiosk6-клиент-e",
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISFotokiosk6КлиентL",
+  "className": "КлиентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-клиент",
+      "modelProjection": "КлиентL"
+    }
+  ]
+}

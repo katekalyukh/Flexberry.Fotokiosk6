@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISFotokiosk6СделатьФото",
+  "modelName": "i-i-s-fotokiosk6-сделать-фото",
+  "className": "СделатьФото",
+  "nameSpace": "IIS.Fotokiosk6",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "категорФото",
+      "type": "i-i-s-fotokiosk6-категория",
+      "flexberryType": "Категория",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колВоФото",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "допНастройки",
+      "relatedTo": "i-i-s-fotokiosk6-доп-настройки",
+      "inverse": "сделатьФото"
+    }
+  ],
+  "projections": [
+    {
+      "name": "СделатьФотоE",
+      "modelName": "i-i-s-fotokiosk6-сделать-фото",
+      "attrs": [
+        {
+          "name": "колВоФото",
+          "caption": "Количество фото",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "категорФото",
+          "caption": "Категория фото",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДопНастройкиE",
+          "caption": "Дополнительные настройки",
+          "name": "допНастройки",
+          "relatedTo": "i-i-s-fotokiosk6-доп-настройки",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СделатьФотоL",
+      "modelName": "i-i-s-fotokiosk6-сделать-фото",
+      "attrs": [
+        {
+          "name": "колВоФото",
+          "caption": "Количество фото",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "категорФото",
+          "caption": "Категория фото",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

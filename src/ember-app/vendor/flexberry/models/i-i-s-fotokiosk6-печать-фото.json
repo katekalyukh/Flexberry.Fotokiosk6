@@ -1,0 +1,118 @@
+﻿{
+  "name": "IISFotokiosk6ПечатьФото",
+  "modelName": "i-i-s-fotokiosk6-печать-фото",
+  "className": "ПечатьФото",
+  "nameSpace": "IIS.Fotokiosk6",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "размер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сделатьФото",
+      "relatedTo": "i-i-s-fotokiosk6-сделать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПечатьФотоE",
+      "modelName": "i-i-s-fotokiosk6-печать-фото",
+      "attrs": [
+        {
+          "name": "размер",
+          "caption": "Размер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk6-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПечатьФотоL",
+      "modelName": "i-i-s-fotokiosk6-печать-фото",
+      "attrs": [
+        {
+          "name": "размер",
+          "caption": "Размер фото",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Категория фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk6-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

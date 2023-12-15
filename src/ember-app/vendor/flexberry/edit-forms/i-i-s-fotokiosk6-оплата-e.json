@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Оплата",
+  "name": "IISFotokiosk6ОплатаE",
+  "className": "ОплатаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-оплата",
+      "modelProjection": "ОплатаE"
+    }
+  ]
+}

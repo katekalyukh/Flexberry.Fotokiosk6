@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Сделать фото",
+  "name": "Сделать фото",
+  "className": "СделатьФотоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-сделать-фото",
+      "modelProjection": "СделатьФотоE"
+    }
+  ]
+}

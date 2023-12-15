@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Fotokiosk6.model.DopNastrojki</class>
+        <class>Fotokiosk6.model.PechatFoto</class>
+        <class>Fotokiosk6.model.OtpravNaPochtu</class>
+        <class>Fotokiosk6.model.Klient</class>
+        <class>Fotokiosk6.model.Oplata</class>
+        <class>Fotokiosk6.model.SdelatFoto</class>
+        <class>Fotokiosk6.model.FlexberryAdvLimit</class>
+        <class>Fotokiosk6.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Fotokiosk6.model.NewPlatformFlexberryServicesLock</class>
+        <class>Fotokiosk6.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

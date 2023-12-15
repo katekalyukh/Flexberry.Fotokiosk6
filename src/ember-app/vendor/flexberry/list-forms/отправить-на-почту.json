@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "отправить-на-почту",
+  "editForm": "отправить-на-почту",
+  "external": false,
+  "caption": "Отправить на почту",
+  "name": "Отправить на почту",
+  "className": "ОтправНаПочтуL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-отправ-на-почту",
+      "modelProjection": "ОтправНаПочтуL"
+    }
+  ]
+}

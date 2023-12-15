@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk6-оплата-e",
+  "editForm": "i-i-s-fotokiosk6-оплата-e",
+  "external": false,
+  "caption": "Оплата",
+  "name": "IISFotokiosk6ОплатаL",
+  "className": "ОплатаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk6-оплата",
+      "modelProjection": "ОплатаL"
+    }
+  ]
+}

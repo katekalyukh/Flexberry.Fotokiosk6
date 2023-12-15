@@ -1,0 +1,167 @@
+﻿{
+  "name": "IISFotokiosk6Клиент",
+  "modelName": "i-i-s-fotokiosk6-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.Fotokiosk6",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-fotokiosk6-оплата",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отправНаПочту",
+      "relatedTo": "i-i-s-fotokiosk6-отправ-на-почту",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-fotokiosk6-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk6-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата оплаты",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "время",
+              "caption": "Время оплаты",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата оплаты",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk6-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-fotokiosk6-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk6-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата оплаты",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "время",
+              "caption": "Время оплаты",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата оплаты",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk6-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
